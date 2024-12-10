@@ -1,0 +1,5 @@
+// common project styles
+@use '../../shared/ui/common styles/index.scss';
+
+// test-section styles
+@use '../../widgets/test-section/ui/test-section.module.scss';
