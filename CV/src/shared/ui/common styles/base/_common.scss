@@ -1,5 +1,6 @@
-@use '../abstracts/mixins';
+@use '../abstracts/constants';
 @use '../abstracts/placeholders';
+@use '../abstracts/mixins';
 
 * {
   // Position
@@ -41,7 +42,7 @@ body {
   padding: 0;
 
   // Typography
-  @extend %font-Inter;
+  @extend %font-Poppins;
   font-size: 16px;
   // Decoration
 
@@ -67,35 +68,6 @@ body {
   }
 }
 
-#root {
-  // Position
-
-  // block-model
-  width: 100%;
-  min-height: 100vh;
-  // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
-}
-
-.root__container {
-  // Position
-
-  // block-model
-  justify-content: space-between;
-  // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
-}
-
 .link {
   // Position
 
@@ -103,16 +75,16 @@ body {
   width: inherit;
   height: inherit;
   // Typography
-  @extend %font-Inter;
+  @extend %font-Poppins;
   @include mixins.text(
     $size: var(--text-fsize-L),
     $style: normal,
     $weight: 400,
-    $height: 40px
+    $height: var(--text-fsize-L)
   );
-  line-height: 50px;
+  line-height: calc(var(--text-fsize-L) * 2);
   // Decoration
-  color: var(--color-light);
+  color: var(--color-dark);
   // Animation
   @extend %transition-basic;
   @extend %cursor-pointer;
@@ -136,42 +108,19 @@ body {
   }
 }
 
-.title {
-  // Position
-
-  // block-model
-  @extend %reset-padding-margin;
-
-  // Typography
-  @extend %font-Forum;
-  @include mixins.text(
-    $size: var(--title-h1_desktop),
-    $style: normal,
-    $weight: 400,
-    $height: 50px
-  );
-
-  // Decoration
-  color: var(--color-dark);
-  // Animation
-
-  // Various
-}
-
 .title-h1 {
   // Position
 
   // block-model
 
   // Typography
-  @extend %font-Forum;
   @include mixins.text(
     $size: var(--title-h1_desktop),
     $style: normal,
-    $weight: 400,
-    $height: 50px
+    $weight: 600,
+    $height: var(--line-height-34)
   );
-
+  @extend %font-Poppins;
   // Decoration
   color: var(--color-dark);
 
@@ -186,16 +135,16 @@ body {
   // block-model
 
   // Typography
-  @extend %font-Forum;
   @include mixins.text(
     $size: var(--title-h2_desktop),
     $style: normal,
-    $weight: 400,
-    $height: 40px
+    $weight: 500,
+    $height: var(--line-height-20)
   );
+  @extend %font-Poppins;
 
   // Decoration
-  color: var(--color-dark);
+  color: var(--color-title);
 
   // Animation
 
@@ -208,12 +157,11 @@ body {
   // block-model
 
   // Typography
-  @extend %font-Forum;
   @include mixins.text(
-    $size: var(--title-h2_desktop),
+    $size: var(--title-h3_desktop),
     $style: normal,
-    $weight: 400,
-    $height: 40px
+    $weight: 700,
+    $height: var(--line-height-20)
   );
 
   // Decoration
@@ -224,66 +172,66 @@ body {
   // Various
 }
 
-.title-h4 {
+.paragraph-title-xl {
   // Position
 
   // block-model
 
   // Typography
-  @extend %font-Forum;
-  @include mixins.text(
-    $size: var(--title-h4_desktop),
-    $style: normal,
-    $weight: 400,
-    $height: 50px
-  );
-
-  // Decoration
-  color: var(--color-dark);
-
-  // Animation
-
-  // Various
-}
-
-.title-h5 {
-  // Position
-
-  // block-model
-
-  // Typography
-  @extend %font-Forum;
-  @include mixins.text(
-    $size: var(--title-h5_desktop),
-    $style: normal,
-    $weight: 400,
-    $height: 40px
-  );
-
-  // Decoration
-  color: var(--color-dark);
-
-  // Animation
-
-  // Various
-}
-
-.paragraph-l {
-  // Position
-
-  // block-model
-
-  // Typography
-  @extend %font-Inter;
+  @extend %font-Poppins;
   @include mixins.text(
     $size: var(--text-fsize-L),
     $style: normal,
-    $weight: 400,
-    $height: 40px
+    $weight: 500,
+    $height: var(--line-height-24)
   );
 
   // Decoration
-  color: var(--color-dark);
+  color: var(--color-title);
+
+  // Animation
+
+  // Various
+}
+
+.paragraph-title-l {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Prata;
+  @include mixins.text(
+    $size: var(--text-fsize-M),
+    $style: normal,
+    $weight: 400,
+    $height: var(--line-height-16)
+  );
+
+  // Decoration
+  color: var(--color-subtitle);
+
+  // Animation
+
+  // Various
+}
+
+.paragraph-title-s {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Poppins;
+  @include mixins.text(
+    $size: var(--text-fsize-S),
+    $style: normal,
+    $weight: 500,
+    $height: var(--line-height-14)
+  );
+
+  // Decoration
+  color: var(--color-interactive);
 
   // Animation
 
@@ -296,12 +244,12 @@ body {
   // block-model
 
   // Typography
-  @extend %font-Inter;
+  @extend %font-Poppins;
   @include mixins.text(
     $size: var(--text-fsize-S),
     $style: normal,
     $weight: 400,
-    $height: 10px
+    $height: var(--line-height-14)
   );
 
   // Decoration
@@ -359,7 +307,7 @@ a {
   @extend %reset-padding-margin;
 
   // Typography
-  color: var(--color-light);
+  color: var(--color-dark);
   // Decoration
   text-decoration: none;
   @extend %cursor-pointer;
@@ -368,7 +316,7 @@ a {
 
   // Various
   & :visited {
-    color: var(--color-light);
+    color: var(--color-dark);
   }
 }
 
@@ -412,12 +360,17 @@ img {
   @include mixins.media-tablet {
     padding: 0 var(--padding-content-tablet);
   }
+
+  @include mixins.media-mobile {
+    padding: 0 var(--padding-content-mobile);
+  }
 }
 
-.main {
+main {
   // Position
 
   // block-model
+  flex-grow: 1;
 
   // Typography
 
@@ -432,8 +385,11 @@ img {
   // Position
 
   // block-model
+  max-width: var(--width-tablet);
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
+  padding: var(--padding-content-desktop);
+  column-gap: var(--gap-beetween-sections);
   // Typography
 
   // Decoration
@@ -441,161 +397,14 @@ img {
   // Animation
 
   // Various
-}
-
-// ==============================================================================================================
-// =========================================== modificators!!! Priority over above ==============================
-// ==============================================================================================================
-
-.text_light {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-  color: var(--color-light);
-  // Animation
-
-  // Various
-}
-
-.text_dark {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-  color: var(--color-dark);
-  // Animation
-
-  // Various
-}
-
-.text_dark-background {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-  color: var(--color-background-dark);
-  // Animation
-
-  // Various
-}
-
-.text_interactive {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-  color: var(--color-interactive);
-  // Animation
-
-  // Various
-}
-
-.title__container {
-  // Position
-
-  // block-model
-  width: 100%;
-  align-items: center;
-  row-gap: 20px;
-  // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
-}
-
-.title_underline {
-  // Position
-
-  // block-model
-  width: 50px;
-  min-height: 1px;
-  // Typography
-
-  // Decoration
-  border-bottom: 1px solid var(--color-dark);
-
-  // Animation
-
-  // Various
-}
-
-.text_uppercase {
-  // Position
-
-  // block-model
-
-  // Typography
-  text-transform: uppercase;
-  // Decoration
-
-  // Animation
-
-  // Various
-}
-
-.text_capitalize {
-  // Position
-
-  // block-model
-
-  // Typography
-  text-transform: capitalize;
-  // Decoration
-
-  // Animation
-
-  // Various
-}
-
-.text_bold {
-  // Position
-
-  // block-model
-
-  // Typography
-  font-weight: 700;
-  // Decoration
-
-  // Animation
-
-  // Various
-}
-
-.text_center {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
-  @include mixins.media-tablet-large {
+  @include mixins.media-mobile {
     // Position
 
     // block-model
-
+    flex-wrap: wrap;
+    row-gap: var(--gap-beetween-sections);
     // Typography
-    text-align: center;
+
     // Decoration
 
     // Animation
@@ -604,43 +413,19 @@ img {
   }
 }
 
-.text_let-space-3px {
+// ==============================================================================================================
+// =========================================== modificators!!! Priority over above ==============================
+// ==============================================================================================================
+
+.text_underline {
   // Position
 
   // block-model
 
   // Typography
-  letter-spacing: 3px;
-  // Decoration
-
-  // Animation
-
-  // Various
-}
-
-.text_let-space-2px {
-  // Position
-
-  // block-model
-
-  // Typography
-  letter-spacing: 2px;
-  // Decoration
-
-  // Animation
-
-  // Various
-}
-
-.text_height-normal {
-  // Position
-
-  // block-model
-
-  // Typography
-  line-height: normal;
 
   // Decoration
+  text-decoration: underline;
 
   // Animation
 

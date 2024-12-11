@@ -1,54 +1,81 @@
 // colors
-$color-background-dark: #0c0c0e;
-$background-radient: linear-gradient(
-  180deg,
-  #0c0c0e 0%,
-  #0c0c0e 0.01%,
-  rgba(18, 18, 21, 0.1) 100%
-);
+$color-background-primary: rgb(255, 255, 255);
+$color-background-additional: rgba(228, 246, 251, 0.5);
 
-$color-interactive: #bb945f;
+$color-interactive: rgb(28, 142, 181);
 
-$color-dark: #000000;
-$color-light: #ffffff;
+$color-title: rgb(28, 142, 181);
+$color-subtitle: rgb(121, 121, 121);
 
-$color-social: #f5efdb;
+$color-dark: rgb(34, 34, 34);
+$color-light: rgb(255, 255, 255);
 
-$color-modal: #8e8e8e;
+// line heights
+$line-height-34: 34px;
+$line-height-24: 24px;
+$line-height-20: 20px;
+$line-height-16: 16px;
+$line-height-14: 14px;
 
 // user width
 $width-desktop: 1440px;
 $width-tablet-large: 1024px;
 $width-tablet: 768px;
 $width-tablet-small: 640px;
-
-// content width
-$content-width-desktop: 1400px;
-$content-width-tablet: 728px;
+$width-mobile: 540px;
 
 // media padding
-$padding-content-desktop: 20px;
+$padding-content-desktop: 32px;
 $padding-content-tablet: 20px;
+$padding-content-mobile: 10px;
+
+// content width
+$content-width-desktop: calc($width-desktop - $padding-content-desktop * 2);
+$content-width-tablet: calc($width-tablet-large - $padding-content-tablet * 2);
+$content-width-mobile: calc($width-mobile - $padding-content-mobile * 2);
+
+// gaps values
+$gap-beetween-sections: 24px;
+$gap-beetween-paragraphs: calc($gap-beetween-sections / 2);
 
 :root {
   // colors
-  --color-background-dark: #{$color-background-dark};
-  --background-radient: #{$background-radient};
+  --color-background-primary: #{$color-background-primary};
+  --color-background-additional: #{$color-background-additional};
 
   --color-interactive: #{$color-interactive};
+
+  --color-title: #{$color-title};
+  --color-subtitle: #{$color-subtitle};
 
   --color-dark: #{$color-dark};
   --color-light: #{$color-light};
 
-  --color-social: #{$color-social};
+  // line heights
+  --line-height-34: #{$line-height-34};
+  --line-height-24: #{$line-height-24};
+  --line-height-20: #{$line-height-20};
+  --line-height-16: #{$line-height-16};
+  --line-height-14: #{$line-height-14};
 
-  --color-modal: #{$color-modal};
+  // user width
+  --width-desktop: #{$width-desktop};
+  --width-tablet-large: #{$width-tablet-large};
+  --width-tablet: #{$width-tablet};
+  --width-tablet-small: #{$width-tablet-small};
+  --width-mobile: #{$width-mobile};
+
+  // media queries padding
+  --padding-content-desktop: #{$padding-content-desktop};
+  --padding-content-tablet: #{$padding-content-tablet};
+  --padding-content-mobile: #{$padding-content-mobile};
 
   // content width
   --content-width-desktop: #{$content-width-desktop};
   --content-width-tablet: #{$content-width-tablet};
+  --content-width-mobile: #{$content-width-mobile};
 
-  // media padding
-  --padding-content-desktop: #{$padding-content-desktop};
-  --padding-content-tablet: #{$padding-content-tablet};
+  // gaps values
+  --gap-beetween-sections: #{$gap-beetween-sections};
+  --gap-beetween-paragraphs: #{$gap-beetween-paragraphs};
 }

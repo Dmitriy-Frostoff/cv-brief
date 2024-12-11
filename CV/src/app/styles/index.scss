@@ -1,5 +1,23 @@
 // common project styles
 @use '../../shared/ui/common styles/index.scss';
 
-// test-section styles
-@use '../../widgets/test-section/ui/test-section.module.scss';
+// header styles
+@use '../../widgets/header/ui/header.module.scss';
+
+// contacts styles
+@use '../../entities/contacts/ui/contacts.module.scss';
+
+// side-left styles
+@use '../../widgets/side-left/ui/side-left.module.scss';
+
+// work-experience styles
+@use '../../entities/work-experience/ui/work-experience.module.scss';
+
+// side-right styles
+@use '../../widgets/side-right/ui/side-right.module.scss';
+
+// education-learning styles
+@use '../../entities/education-learning/ui/education-learning.module.scss';
+
+// skills styles
+@use '../../entities/skills/ui/skills.module.scss';

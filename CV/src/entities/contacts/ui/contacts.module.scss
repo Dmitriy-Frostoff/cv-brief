@@ -1,0 +1,59 @@
+@use '../../../shared/ui/common styles/index' as ui_common;
+
+.contacts {
+  // Position
+
+  // block-model
+  max-width: 180px;
+  row-gap: var(--gap-beetween-paragraphs);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.contacts__container {
+  // Position
+
+  // block-model
+  width: 100%;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.contacts__link {
+  // Position
+
+  // block-model
+
+  // Typography
+  font-weight: 600;
+  // Decoration
+
+  // Animation
+
+  // Various
+  &:hover,
+  &:active {
+    // Position
+
+    // block-model
+
+    // Typography
+
+    // Decoration
+    color: var(--color-interactive);
+    // Animation
+
+    // Various
+  }
+}

@@ -1,0 +1,91 @@
+@use '../../../shared/ui/common styles/index' as ui_common;
+
+header {
+  // Position
+
+  // block-model
+  width: 100%;
+
+  // Typography
+
+  // Decoration
+  background-color: ui_common.$color-background-additional;
+  // Animation
+
+  // Various
+}
+
+.header_center {
+  // Position
+
+  // block-model
+  align-items: center;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.header__container {
+  // Position
+
+  // block-model
+  max-width: var(--width-tablet);
+  width: 100%;
+  padding: var(--padding-content-desktop);
+  align-items: center;
+  column-gap: var(--gap-beetween-sections);
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include ui_common.media-mobile {
+    // Position
+
+    // block-model
+    flex-wrap: wrap;
+    row-gap: var(--gap-beetween-sections);
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}
+
+.header__side-left {
+  // Position
+
+  // block-model
+  max-width: 315px;
+  row-gap: var(--gap-beetween-sections);
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include ui_common.media-mobile {
+    // Position
+
+    // block-model
+    max-width: 100%;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}
