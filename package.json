@@ -49,6 +49,7 @@
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
+    "execa": "^9.5.2",
     "gulp": "^5.0.0",
     "gulp-cli": "^3.0.0",
     "gulp-file-include": "^2.3.0",
@@ -73,7 +74,7 @@
     "typescript": "^5.7.2",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.1.0"
+    "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
     "modern-normalize": "^3.0.1"
