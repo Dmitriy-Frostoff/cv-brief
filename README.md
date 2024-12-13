@@ -1,2 +1,3 @@
 # cv-brief
-my minimalistic CV 
+
+my minimalistic CV

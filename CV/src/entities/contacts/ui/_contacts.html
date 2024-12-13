@@ -1,18 +1,36 @@
-<section class="layout-one-column contacts">
+<section class="layout-two-columns contacts">
   <div class="layout-one-column contacts__container">
-    <p class="paragraph-title-s">Email</p>
-    <a href="mailto:kate.bishop@katedesign.com" target="_blank" title="click" class="link contacts__link paragraph-s text_underline"
-      >kate.bishop@katedesign.com</a
-    >
+    <!-- contact email start -->
+    @@include("./contacts-chunks/_email.html")
+    <!-- contact email end -->
+    <!-- contact linkedIn start -->
+    @@include("./contacts-chunks/_linkedIn.html")
+    <!-- contact linkedIn end -->
+    <!-- contact instagram start -->
+    @@include("./contacts-chunks/_instagram.html")
+    <!-- contact instagram end -->
+    <!-- contact telegram start -->
+    @@include("./contacts-chunks/_telegram.html")
+    <!-- contact telegram end -->
+    <!-- contact discord start -->
+    @@include("./contacts-chunks/_discord.html")
+    <!-- contact discord end -->
   </div>
   <div class="layout-one-column contacts__container">
-    <p class="paragraph-title-s">LinkedIn</p>
-    <a href="https://www.linkedin.com/in/kate-bishop" target="_blank" title="click" class="link contacts__link paragraph-s text_underline"
-      >linkedin.com/in/kate-bishop</a
-    >
-  </div>
-  <div class="layout-one-column contacts__container">
-    <p class="paragraph-title-s">Phone</p>
-    <a href="tel:+46987654321" target="_blank" title="click" class="link contacts__link paragraph-s text_underline">+46 98-765 43 21</a>
+    <!-- contact sololearn start -->
+    @@include("./contacts-chunks/_sololearn.html")
+    <!-- contact sololearn end -->
+    <!-- contact app.rs.school start -->
+    @@include("./contacts-chunks/_app.rs.school.html")
+    <!-- contact app.rs.school end -->
+    <!-- contact github start -->
+    @@include("./contacts-chunks/_github.html")
+    <!-- contact github end -->
+    <!-- contact codewars start -->
+    @@include("./contacts-chunks/_codewars.html")
+    <!-- contact codewars end -->
+    <!-- contact rsschool-cv start -->
+    @@include("./contacts-chunks/_rsschool-cv.html")
+    <!-- contact rsschool-cv end -->
   </div>
 </section>
