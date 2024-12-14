@@ -65,6 +65,9 @@
     @@include("./education-learning-chunks/courses/_javascript_front-end-2022q3.html")
     <!-- courses data end -->
     <!-- courses data start -->
+    @@include("./education-learning-chunks/courses/_js_fe-course-en-2022q3.html")
+    <!-- courses data end -->
+    <!-- courses data start -->
     @@include("./education-learning-chunks/courses/_js_fe-pre-school-2022q4.html")
     <!-- courses data end -->
     <!-- courses data start -->
