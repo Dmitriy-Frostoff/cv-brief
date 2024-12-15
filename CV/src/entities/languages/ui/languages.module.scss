@@ -1,0 +1,45 @@
+@use '../../../shared/ui/common styles/index' as ui_common;
+
+.languages {
+  // Position
+
+  // block-model
+  width: 100%;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.languages__container {
+  // Position
+
+  // block-model
+  row-gap: var(--gap-beetween-sections);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.languages__info-container {
+  // Position
+
+  // block-model
+  row-gap: var(--gap-beetween-paragraphs);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
