@@ -23,6 +23,7 @@ $width-tablet-large: 1024px;
 $width-tablet: 768px;
 $width-tablet-small: 640px;
 $width-mobile: 540px;
+$width-mobile-small: 375px;
 
 // media padding
 $padding-content-desktop: 32px;
@@ -64,6 +65,7 @@ $gap-beetween-paragraphs: calc($gap-beetween-sections / 2);
   --width-tablet: #{$width-tablet};
   --width-tablet-small: #{$width-tablet-small};
   --width-mobile: #{$width-mobile};
+  --width-mobile-small: #{$width-mobile-small};
 
   // media queries padding
   --padding-content-desktop: #{$padding-content-desktop};

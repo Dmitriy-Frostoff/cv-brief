@@ -4,8 +4,7 @@
   // Position
 
   // block-model
-  max-width: 180px;
-  row-gap: var(--gap-beetween-paragraphs);
+  column-gap: var(--gap-beetween-paragraphs);
 
   // Typography
 
@@ -14,6 +13,20 @@
   // Animation
 
   // Various
+  @include ui_common.media-mobile-small {
+    // Position
+
+    // block-model
+    flex-wrap: wrap;
+
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }
 
 .contacts__container {

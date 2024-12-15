@@ -43,3 +43,23 @@
 
   // Various
 }
+
+.work-experience__job-resposibilities {
+  // Position
+
+  // block-model
+  row-gap: var(--gap-beetween-paragraphs);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  & > li:before {
+    display: inline-block;
+    content: '—';
+    width: 1em;
+  }
+}
