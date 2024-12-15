@@ -89,3 +89,51 @@ header {
     // Various
   }
 }
+
+.header__title-container {
+  // Position
+
+  // block-model
+  width: 100%;
+  column-gap: var(--gap-beetween-paragraphs);
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.header__photo-container {
+  // Position
+
+  // block-model
+  width: 90px;
+  height: 90px;
+
+  // Typography
+
+  // Decoration
+  border-radius: 50%;
+  border: 1px solid var(--color-title);
+  background-image: url('../../../shared/assets/images/jpeg/IMG_20210918_163706.png');
+  background-size: 90px;
+  // Animation
+
+  // Various
+}
+
+.header__info-container {
+  // Position
+
+  // block-model
+  row-gap: var(--gap-beetween-paragraphs);
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
