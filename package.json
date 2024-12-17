@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/Dmitriy-Frostoff/cv-brief#readme",
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@types/gulp": "^4.0.17",
     "@types/gulp-file-include": "^0.14.8",
