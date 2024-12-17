@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" />
     <!-- Fonts links end -->
 
@@ -34,121 +35,153 @@
           <div class="layout-two-columns header__title-container">
             <div class="header__photo-container"></div>
             <div class="header__title-info-container">
-              <h1 class="title-h1">Dmitriy Morozov</h1>
+              <h1 class="EN title-h1">Dmitriy Morozov</h1>
+              <h1 class="RU title-h1 hidden">Дмитрий Морозов</h1>
               <p class="paragraph-title-xl">Frontend Developer</p>
             </div>
           </div>
           <div class="layout-one-column header__info-container">
-            <p class="paragraph-s">Hi!) I'm Dmitriy Morozov (a.k.a Dmitriy Frostoff).</p>
-            <p class="paragraph-s">
+            <p class="EN paragraph-s">Hi!) I'm Dmitriy Morozov (a.k.a Dmitriy Frostoff).</p>
+            <p class="RU paragraph-s hidden">Привет!) Я Дмитрий Морозов (a.k.a Dmitriy Frostoff).</p>
+            <p class="EN paragraph-s">
               Positive, sympathetic, responsible, friendly person that likes learning how to learn and applying this skill for reaching mastery in interesting
               business!)) I extremely like Mathematic analisys and Phisics, Music, Drawing. In Moscow State University of Civil Engineering I had two diplomas with
               honors (red diplomas).
             </p>
-            <p class="paragraph-s">I want to reveal all my abilities in the best possible way in Frontend Development and Software Engineering!)</p>
+            <p class="RU paragraph-s hidden">
+              Позитивный, отзывчивый, ответственный, дружелюбный человек, которому нравится учиться и применять этот навык для достижения мастерства в интересном
+              деле!)) Мне чрезвычайно нравятся Математический анализ и физика, музыка, рисование. В Московском государственном строительном университете у меня было
+              два диплома с отличием (красные дипломы).
+            </p>
+            <p class="EN paragraph-s">I want to reveal all my abilities in the best possible way in Frontend Development and Software Engineering!)</p>
+            <p class="RU paragraph-s hidden">Я хочу наилучшим образом раскрыть все свои способности в области Frontend Development и Software Engineering!)</p>
           </div>
         </div>
         <!-- Contacts section start -->
-        <section class="layout-two-columns contacts">
-          <div class="layout-one-column contacts__container">
-            <!-- contact email start -->
+        <section class="layout-one-column contacts">
+          <h2 class="EN title-h2">Contacts</h2>
+          <h2 class="RU title-h2 hidden">Контакты</h2>
+          <div class="layout-two-columns contacts__wrapper">
             <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">Email</p>
-              <a href="mailto:dmitriy.frostoff@yandex.ru" target="_blank" title="click to write e-mail" class="link contacts__link paragraph-s text_underline"
-                >dmitriy.frostoff@yandex.ru</a
-              >
-            </div>
+              <!-- contact email start -->
+              <div class="layout-one-column contacts__container">
+                <p class="paragraph-title-s">Email</p>
+                <a href="mailto:dmitriy.frostoff@yandex.ru" target="_blank" title="click to write e-mail" class="link contacts__link paragraph-s text_underline"
+                  >dmitriy.frostoff@yandex.ru</a
+                >
+              </div>
 
-            <!-- contact email end -->
-            <!-- contact linkedIn start -->
+              <!-- contact email end -->
+              <!-- contact linkedIn start -->
+              <div class="layout-one-column contacts__container">
+                <p class="paragraph-title-s">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/dmitriy-frostoff/" target="_blank" title="LinkedIn acc" class="link contacts__link paragraph-s text_underline"
+                  >linkedin.com/in/dmitriy-frostoff</a
+                >
+              </div>
+
+              <!-- contact linkedIn end -->
+              <!-- contact instagram start -->
+              <div class="layout-one-column contacts__container">
+                <p class="paragraph-title-s">Instagram</p>
+                <a href="https://www.instagram.com/dmitriy.frostoff/" target="_blank" title="insta acc" class="link contacts__link paragraph-s text_underline"
+                  >id: dmitriy.frostoff</a
+                >
+              </div>
+
+              <!-- contact instagram end -->
+              <!-- contact telegram start -->
+              <div class="layout-one-column contacts__container">
+                <p class="paragraph-title-s">Telegram</p>
+                <a href="https://t.me/Dmitriy_Frostoff" target="_blank" title="Telegram acc" class="link contacts__link paragraph-s text_underline">@Dmitriy_Frostoff</a>
+              </div>
+
+              <!-- contact telegram end -->
+              <!-- contact discord start -->
+              <div class="layout-one-column contacts__container">
+                <p class="paragraph-title-s">Discord</p>
+                <a href="https://discord.com/" target="_blank" title="click to open Discord" class="link contacts__link paragraph-s text_underline">@dmitriy_frostoff</a>
+              </div>
+
+              <!-- contact discord end -->
+              <!-- contact location start -->
+              <div class="layout-one-column contacts__container">
+                <p class="EN paragraph-title-s">Location</p>
+                <p class="RU paragraph-title-s hidden">Местоположение</p>
+                <p class="EN paragraph-s">Kaluga, Russia</p>
+                <p class="RU paragraph-s hidden">Калуга, Россия</p>
+              </div>
+
+              <!-- contact location end -->
+            </div>
             <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">LinkedIn</p>
-              <a href="https://www.linkedin.com/in/dmitriy-frostoff/" target="_blank" title="LinkedIn acc" class="link contacts__link paragraph-s text_underline"
-                >linkedin.com/in/dmitriy-frostoff</a
-              >
-            </div>
+              <!-- contact sololearn start -->
+              <div class="layout-one-column contacts__container">
+                <p class="paragraph-title-s">Sololearn</p>
+                <a href="https://www.sololearn.com/profile/16514154" target="_blank" title="sololearn.com acc" class="link contacts__link paragraph-s text_underline"
+                  >id: 16514154</a
+                >
+              </div>
 
-            <!-- contact linkedIn end -->
-            <!-- contact instagram start -->
-            <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">Instagram</p>
-              <a href="https://www.instagram.com/dmitriy.frostoff/" target="_blank" title="insta acc" class="link contacts__link paragraph-s text_underline"
-                >id: dmitriy.frostoff</a
-              >
-            </div>
+              <!-- contact sololearn end -->
+              <!-- contact app.rs.school start -->
+              <div class="layout-one-column contacts__container">
+                <p class="paragraph-title-s">app.rs.school</p>
+                <a href="https://app.rs.school/" target="_blank" title="the Rolling Scopes School app" class="link contacts__link paragraph-s text_underline"
+                  >search: Dmitriy_Morozov</a
+                >
+              </div>
 
-            <!-- contact instagram end -->
-            <!-- contact telegram start -->
-            <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">Telegram</p>
-              <a href="https://t.me/Dmitriy_Frostoff" target="_blank" title="Telegram acc" class="link contacts__link paragraph-s text_underline">@Dmitriy_Frostoff</a>
-            </div>
+              <!-- contact app.rs.school end -->
+              <!-- contact github start -->
+              <div class="layout-one-column contacts__container">
+                <p class="paragraph-title-s">GitHub</p>
+                <a href="https://github.com/Dmitriy-Frostoff/" target="_blank" title="github acc" class="link contacts__link paragraph-s text_underline">dmitriy-frostoff</a>
+              </div>
 
-            <!-- contact telegram end -->
-            <!-- contact discord start -->
-            <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">Discord</p>
-              <a href="https://discord.com/" target="_blank" title="click to open Discord" class="link contacts__link paragraph-s text_underline">@dmitriy_frostoff</a>
-            </div>
+              <!-- contact github end -->
+              <!-- contact codewars start -->
+              <div class="layout-one-column contacts__container">
+                <p class="paragraph-title-s">Codewars</p>
+                <a
+                  href="https://www.codewars.com/users/rsschool_78dcfb24c923f558"
+                  target="_blank"
+                  title="codewars.com acc"
+                  class="link contacts__link paragraph-s text_underline"
+                  >codewarrior id: rsschool_78dcfb24c923f558</a
+                >
+              </div>
 
-            <!-- contact discord end -->
-            <!-- contact location start -->
-            <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">Location</p>
-              <p class="paragraph-s">Kaluga, Russia</p>
-            </div>
+              <!-- contact codewars end -->
+              <!-- contact rsschool-cv start -->
+              <div class="layout-one-column contacts__container">
+                <p class="EN paragraph-title-s">Personal site</p>
+                <p class="RU paragraph-title-s hidden">Личный сайт</p>
+                <a href="https://dmitriy-frostoff.github.io/rsschool-cv/" target="_blank" title="personal site" class="link contacts__link paragraph-s text_underline"
+                  >https://dmitriy-frostoff.github.io/rsschool-cv/</a
+                >
+              </div>
 
-            <!-- contact location end -->
+              <!-- contact rsschool-cv end -->
+            </div>
           </div>
-          <div class="layout-one-column contacts__container">
-            <!-- contact sololearn start -->
-            <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">Sololearn</p>
-              <a href="https://www.sololearn.com/profile/16514154" target="_blank" title="sololearn.com acc" class="link contacts__link paragraph-s text_underline"
-                >id: 16514154</a
-              >
+          <!-- language-switcher start -->
+          <div class="layout-two-columns language-switcher">
+            <div class="language-switcher__container">
+              <label class="language-switcher__label" for="EN-toggler">
+                EN
+                <input type="radio" name="language-toggler" id="EN-toggler" checked />
+              </label>
             </div>
-
-            <!-- contact sololearn end -->
-            <!-- contact app.rs.school start -->
-            <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">app.rs.school</p>
-              <a href="https://app.rs.school/" target="_blank" title="the Rolling Scopes School app" class="link contacts__link paragraph-s text_underline"
-                >search: Dmitriy_Morozov</a
-              >
+            <div class="language-switcher__container">
+              <label class="language-switcher__label" for="RU-toggler">
+                RU
+                <input type="radio" name="language-toggler" id="RU-toggler" />
+              </label>
             </div>
-
-            <!-- contact app.rs.school end -->
-            <!-- contact github start -->
-            <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">GitHub</p>
-              <a href="https://github.com/Dmitriy-Frostoff/" target="_blank" title="github acc" class="link contacts__link paragraph-s text_underline">dmitriy-frostoff</a>
-            </div>
-
-            <!-- contact github end -->
-            <!-- contact codewars start -->
-            <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">Codewars</p>
-              <a
-                href="https://www.codewars.com/users/rsschool_78dcfb24c923f558"
-                target="_blank"
-                title="codewars.com acc"
-                class="link contacts__link paragraph-s text_underline"
-                >codewarrior id: rsschool_78dcfb24c923f558</a
-              >
-            </div>
-
-            <!-- contact codewars end -->
-            <!-- contact rsschool-cv start -->
-            <div class="layout-one-column contacts__container">
-              <p class="paragraph-title-s">Personal site</p>
-              <a href="https://dmitriy-frostoff.github.io/rsschool-cv/" target="_blank" title="personal site" class="link contacts__link paragraph-s text_underline"
-                >https://dmitriy-frostoff.github.io/rsschool-cv/</a
-              >
-            </div>
-
-            <!-- contact rsschool-cv end -->
           </div>
+
+          <!-- language-switcher end -->
         </section>
 
         <!-- Contacts section end -->
@@ -164,33 +197,64 @@
           <!-- work-experience section start -->
           <section class="layout-one-column work-experience">
             <div class="layout-one-column work-experience__container">
-              <h2 class="title-h2">Work experience</h2>
+              <h2 class="EN title-h2">Work experience</h2>
+              <h2 class="RU title-h2 hidden">Опыт работы</h2>
               <!-- job description start -->
               <div class="layout-one-column work-experience__job-container">
                 <div class="layout-one-column work-experience__job-title-container">
                   <h3 class="title-h3">Student Frontend Developer</h3>
-                  <p class="paragraph-title-l">The Rolling Scopes School, September 2022 — present</p>
+                  <p class="EN paragraph-title-l">The Rolling Scopes School, September 2022 — present</p>
+                  <p class="RU paragraph-title-l hidden">The Rolling Scopes School, Сентябрь 2022 — по настоящее время</p>
                 </div>
-                <p class="paragraph-s">Learning Software Engineering and Frontend Development at the Rolling Scopes School. I also do part-time jobs at the moment.</p>
-                <p class="paragraph-s text_underline text_highlight">Activity:</p>
+                <p class="EN paragraph-s">Learning Software Engineering and Frontend Development at the Rolling Scopes School. I also do part-time jobs at the moment.</p>
+                <p class="RU paragraph-s hidden">
+                  Изучение Software Engineering и Frontend Development в the Rolling Scopes School. Также я беру подработки в настоящее время.
+                </p>
+                <p class="EN paragraph-s text_underline text_highlight">Activity:</p>
+                <p class="RU paragraph-s text_underline text_highlight hidden">Обязанности:</p>
                 <ul class="layout-one-column work-experience__job-resposibilities paragraph-s">
-                  <li>creating landing pages based on Figma layouts (Webpack 5, Gulp 5, JavaScript, TypeScript, SCSS / CSS, HTML);</li>
-                  <li>development of applications (Webpack 5, JavaScript, TypeScript, SCSS / CSS, HTML);</li>
-                  <li>learning the modern stack of technologies and methodologies of Frontend development;</li>
-                  <li>learning how to write "Clean code". Formatting of own code and commits messages using ESLint, Prettier, Husky;</li>
-                  learning Software Development Lifecycle (SDLC), Software Engineering, getting acknowledge to the basics of Agile (Scrum, Kanban) and Waterfall Software
-                  Development Methodology;
-                  <li>independent search for solutions to emerging technical problems and up-to-date technical information to complete the tasks set;</li>
-                  <li>development within the time limits set in the TOR;</li>
-                  <li>code review of other students' work based on the established TOR (Cross-Check);</li>
-                  <li>correction and refactoring of my works due to the comments received during the code review (Cross-Check);</li>
-                  <li>
+                  <li class="EN">creating landing pages based on Figma layouts (Webpack 5, Gulp 5, JavaScript, TypeScript, SCSS / CSS, HTML);</li>
+                  <li class="RU hidden">создание landing pages на основании макетов из Figma (Webpack 5, Gulp 5, JavaScript, TypeScript, SCSS / CSS, HTML);</li>
+                  <li class="EN">development of applications (Webpack 5, JavaScript, TypeScript, SCSS / CSS, HTML);</li>
+                  <li class="RU hidden">разработка приложений (Webpack 5, JavaScript, TypeScript, SCSS / CSS, HTML);</li>
+                  <li class="EN">learning the modern stack of technologies and methodologies of Frontend development;</li>
+                  <li class="RU hidden">изучение современного стэка технологий и методологий Frontend development;</li>
+                  <li class="EN">learning how to write "Clean code". Formatting of own code and commits messages using ESLint, AirBnB config, Prettier, Husky;</li>
+                  <li class="RU hidden">
+                    приобретение навыков по написанию "Clean code". Форматирование собственного кода и commits messages при помощи ESLint, AirBnB config, Prettier, Husky;
+                  </li>
+                  <li class="EN">
+                    learning Software Development Lifecycle (SDLC), Software Engineering, getting acknowledge to the basics of Agile (Scrum, Kanban) and Waterfall Software
+                    Development Methodology;
+                  </li>
+                  <li class="RU hidden">
+                    изучение Software Development Lifecycle (SDLC), Software Engineering, получение базовых навыков в Agile (Scrum, Kanban) и Waterfall Software Development
+                    Methodology;
+                  </li>
+                  <li class="EN">independent search for solutions to emerging technical problems and up-to-date technical information to complete the tasks set;</li>
+                  <li class="RU hidden">самостоятельный поиск идей и решений возникающих технических проблем и актуальной технической информации для выполнения заданий;</li>
+                  <li class="EN">development within the time limits set in the TOR;</li>
+                  <li class="RU hidden">разработка в пределах сроков, указанных в ТЗ;</li>
+                  <li class="EN">code review of other students' work based on the established TOR (Cross-Check);</li>
+                  <li class="RU hidden">code review работ других студентов на основании требований, утверждённых в ТЗ (Cross-Check);</li>
+                  <li class="EN">correction and refactoring of my works due to the comments received during the code review (Cross-Check);</li>
+                  <li class="RU hidden">исправление и refactoring моих проектов на основании замечаний code review (Cross-Check);</li>
+                  <li class="EN">
                     learning Behavior-driven development (BDD), Test - driven development (TDD) and writing Unit, integration tests (Mocha + Chai, Jest, React Testing
                     library);
                   </li>
-                  <li>
+                  <li class="RU hidden">
+                    получение навыков в Behavior-driven development (BDD), Test - driven development (TDD) и написании Unit, integration tests (Mocha + Chai, Jest, React
+                    Testing library);
+                  </li>
+                  <li class="EN">
                     interaction with other students and more experienced developers - to improve the quality of own code, to find optimal solutions. Active usage "30 minutes
                     rule" for solving technical problems with your application. Active AI helpers usage (actual chatGPT);
+                  </li>
+                  <li class="RU hidden">
+                    культурное взаимодействие с другими студентами и опытными разработчиками чтобы: улучшить качество моего кода, находить оптимальные инженерные решения.
+                    Активное применение "Правила 30 минут" для решений возникающих технических проблем в моих приложениях. Активное использование AI помощников (актульаный
+                    chatGPT);
                   </li>
                 </ul>
                 <p class="paragraph-s text_underline text_highlight">Stack:</p>
@@ -213,12 +277,14 @@
           <!-- education-learning section start -->
           <section class="layout-one-column education-learning">
             <div class="layout-one-column education-learning__container">
-              <h2 class="title-h2">Education & Learning</h2>
+              <h2 class="EN title-h2">Education & Learning</h2>
+              <h2 class="RU title-h2 hidden">Образование и учеба</h2>
               <!-- education data start -->
               <div class="layout-one-column education-learning__alma-mater-container">
                 <div class="layout-one-column education-learning__alma-mater-title-container">
                   <h3 class="title-h3">Frontend developer</h3>
-                  <p class="paragraph-title-l">The Rolling Scopes School, JS / FRONT-END, 2022 - present</p>
+                  <p class="EN paragraph-title-l">The Rolling Scopes School, JS / FRONT-END, 2022 - present</p>
+                  <p class="RU paragraph-title-l hidden">The Rolling Scopes School, JS / FRONT-END, 2022 - по настоящее время</p>
                 </div>
               </div>
 
@@ -226,20 +292,26 @@
               <!-- education data start -->
               <div class="layout-one-column education-learning__alma-mater-container">
                 <div class="layout-one-column education-learning__alma-mater-title-container">
-                  <h3 class="title-h3">Master of Science in Civil Engineering</h3>
-                  <p class="paragraph-title-l">Moscow State University of Civil Engineering, 2016 - 2018</p>
+                  <h3 class="EN title-h3">Master of Science in Civil Engineering</h3>
+                  <h3 class="RU title-h3 hidden">Степень Магистра по направлению Строительство</h3>
+                  <p class="EN paragraph-title-l">Moscow State University of Civil Engineering, 2016 - 2018</p>
+                  <p class="RU paragraph-title-l hidden">Московский Государственный Строительный Университет, 2016 - 2018</p>
                 </div>
-                <p class="paragraph-s">Grade: 5 / 5, Diploma with honors</p>
+                <p class="EN paragraph-s">Grade: 5 / 5, Diploma with honors</p>
+                <p class="RU paragraph-s hidden">Средняя оценка по диплому: 5 / 5, Диплом с отличием</p>
               </div>
 
               <!-- education data end -->
               <!-- education data start -->
               <div class="layout-one-column education-learning__alma-mater-container">
                 <div class="layout-one-column education-learning__alma-mater-title-container">
-                  <h3 class="title-h3">Bachelor of Science in Civil Engineering</h3>
-                  <p class="paragraph-title-l">Moscow State University of Civil Engineering, 2012 - 2016</p>
+                  <h3 class="EN title-h3">Bachelor of Science in Civil Engineering</h3>
+                  <h3 class="RU title-h3 hidden">Степень Бакалавра по направлению Строительство</h3>
+                  <p class="EN paragraph-title-l">Moscow State University of Civil Engineering, 2012 - 2016</p>
+                  <p class="RU paragraph-title-l hidden">Московский Государственный Строительный Университет, 2012 - 2016</p>
                 </div>
-                <p class="paragraph-s">Grade: 4.88 / 5, Diploma with honors</p>
+                <p class="EN paragraph-s">Grade: 4.88 / 5, Diploma with honors</p>
+                <p class="RU paragraph-s hidden">Средняя оценка по диплому: 4.88 / 5, Диплом с отличием</p>
               </div>
 
               <!-- education data end -->
@@ -250,14 +322,19 @@
           <!-- languages section start -->
           <section class="layout-one-column languages">
             <div class="layout-one-column languages__container">
-              <h2 class="title-h2">Languages</h2>
+              <h2 class="EN title-h2">Languages</h2>
+              <h2 class="RU title-h2 hidden">Языки</h2>
               <div class="layout-one-column languages__info-container">
                 <!-- languages data start -->
-                <a class="link paragraph-title-l" href="https://www.efset.org/cert/4Tg7Hj" title="EFSet sertificate" target="_blank">English, B2 (Upper-Intermediate)</a>
+                <a class="EN link paragraph-title-l" href="https://www.efset.org/cert/4Tg7Hj" title="EFSet sertificate" target="_blank">English, B2 (Upper-Intermediate)</a>
+                <a class="RU link paragraph-title-l hidden" href="https://www.efset.org/cert/4Tg7Hj" title="EFSet sertificate" target="_blank"
+                  >Английский, B2 (Upper-Intermediate)</a
+                >
 
                 <!-- languages data end -->
                 <!-- languages data start -->
-                <p class="paragraph-title-l">Russian, Native</p>
+                <p class="EN paragraph-title-l">Russian, Native</p>
+                <p class="RU paragraph-title-l hidden">Русский, Родной</p>
 
                 <!-- languages data end -->
               </div>
@@ -268,18 +345,24 @@
           <!-- skills section start -->
           <section class="layout-one-column skills">
             <div class="layout-one-column skills__container">
-              <h2 class="title-h2">Skills</h2>
+              <h2 class="EN title-h2">Skills</h2>
+              <h2 class="RU title-h2 hidden">Навыки</h2>
               <div class="layout-one-column skills__info-container">
-                <p class="paragraph-s text_highlight">Fundamentals:</p>
+                <p class="EN paragraph-s text_highlight">Fundamentals:</p>
+                <p class="RU paragraph-s text_highlight hidden">Фундаментальные:</p>
                 <p class="paragraph-s">
                   Computer Science, Software Development Life Cycle (SDLC), Functional programming, Object-oriented programming (OOP), SOLID, OOP Design patterns,
                   Algorithms and Data Structures, Clean Code Writing, DRY, KISS, YAGNI, Test Driven Development (TDD), Behavior Driven Development (BDD), Test design
                   techniques, Tests Design patterns
                 </p>
-                <p class="paragraph-s">
+                <p class="EN paragraph-s">
                   Acquaintance with architectures: Clean Architecture, MVC, MVP, MVVM, Modular Architecture, Atomic design, Feature-Sliced Design (FSD).
                 </p>
-                <p class="paragraph-s">Acquaintance with Scrum, Kanban, Agile & Waterfall methodologies.</p>
+                <p class="RU paragraph-s hidden">
+                  Базовые знания об архитектурах: Clean Architecture, MVC, MVP, MVVM, Modular Architecture, Atomic design, Feature-Sliced Design (FSD).
+                </p>
+                <p class="EN paragraph-s">Acquaintance with Scrum, Kanban, Agile & Waterfall methodologies.</p>
+                <p class="RU paragraph-s hidden">Базовые знания о Scrum, Kanban, Agile и Waterfall методологиях.</p>
                 <p class="paragraph-s text_highlight">Hard Skills:</p>
                 <p class="paragraph-s">
                   HTML5, CSS3, JavaScript, TypeScript, Python, SCSS, Pug, React 18, Webpack 5, Gulp 5, Execa, NodeJS, Eslint, AirBnB config, Prettier, Husky, Babel,
