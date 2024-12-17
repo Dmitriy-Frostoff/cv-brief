@@ -1,0 +1,134 @@
+@use '../../ui/common styles/index.scss' as ui_common;
+
+.language-switcher {
+  // Position
+
+  // block-model
+  column-gap: var(--gap-beetween-paragraphs);
+  // Typography
+
+  // Decoration
+  border: 1px solid var(--color-interactive);
+  border-radius: var(--gap-beetween-paragraphs);
+  // Animation
+
+  // Various
+  @media print {
+    & {
+      display: none;
+    }
+  }
+}
+
+.language-switcher__container {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  border-radius: inherit;
+
+  // Animation
+
+  // Various
+}
+
+.language-switcher__label {
+  // Position
+
+  // block-model
+  display: block;
+  padding: 5px;
+
+  // Typography
+
+  // Decoration
+  border-radius: inherit;
+
+  // Animation
+  @extend %transition-basic;
+
+  // Various
+
+  & > input[type='radio'],
+  &:hover {
+    // Position
+
+    // block-model
+
+    // Typography
+
+    // Decoration
+
+    // Animation
+    @extend %cursor-pointer;
+
+    // Various
+  }
+
+  &:has(input:checked) {
+    // Position
+
+    // block-model
+
+    // Typography
+
+    // Decoration
+    background-color: var(--color-interactive);
+
+    // Animation
+
+    // Various
+  }
+
+  &:hover {
+    // Position
+
+    // block-model
+
+    // Typography
+
+    // Decoration
+    background-color: var(--color-interactive);
+    filter: hue-rotate(45deg);
+
+    // Animation
+
+    // Various
+  }
+
+  &:active {
+    // Position
+
+    // block-model
+
+    // Typography
+
+    // Decoration
+    background-color: var(--color-subtitle);
+
+    // Animation
+    // @extend %transition-basic;
+    @extend %cursor-pointer;
+
+    // Various
+  }
+}
+
+#EN-toggler,
+#RU-toggler {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  appearance: none;
+
+  // Animation
+
+  // Various
+}

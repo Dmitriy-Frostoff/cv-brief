@@ -1,0 +1,30 @@
+@use '../../../shared/ui/common styles/index' as ui_common;
+
+.side-right__container {
+  // Position
+
+  // block-model
+  max-width: 255px;
+  row-gap: var(--gap-beetween-sections);
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include ui_common.media-mobile {
+    // Position
+
+    // block-model
+
+    max-width: 100%;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}

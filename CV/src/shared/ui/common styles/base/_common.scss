@@ -1,0 +1,506 @@
+@use '../abstracts/constants';
+@use '../abstracts/placeholders';
+@use '../abstracts/mixins';
+
+* {
+  // Position
+
+  // block-model
+  box-sizing: border-box;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+html {
+  // Position
+
+  // block-model
+  scroll-behavior: smooth;
+  // Typography
+  font-size: 16px;
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+body {
+  // Position
+
+  // block-model
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+
+  // Typography
+  @extend %font-Poppins;
+  font-size: 16px;
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+@include mixins.media-tablet-minus1px {
+  .body_scroll-lock {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+
+    /* Decoration */
+    overflow: hidden;
+
+    /* Animation */
+
+    /* Various */
+  }
+}
+
+.link {
+  // Position
+
+  // block-model
+  width: inherit;
+  height: inherit;
+  // Typography
+  @extend %font-Poppins;
+  @include mixins.text(
+    $size: var(--text-fsize-L),
+    $style: normal,
+    $weight: 400,
+    $height: var(--text-fsize-L)
+  );
+  line-height: calc(var(--text-fsize-L) * 2);
+  // Decoration
+  color: var(--color-dark);
+  // Animation
+  @extend %transition-basic;
+  @extend %cursor-pointer;
+
+  // Various
+  &:hover,
+  &:active {
+    @extend %transition-basic;
+  }
+
+  &:hover {
+    @extend %transition-basic;
+    color: var(--color-interactive);
+    border-radius: inherit;
+  }
+
+  &:active {
+    @extend %transition-basic;
+    color: var(--color-interactive);
+    border-radius: inherit;
+  }
+}
+
+.title-h1 {
+  // Position
+
+  // block-model
+
+  // Typography
+  @include mixins.text(
+    $size: var(--title-h1_desktop),
+    $style: normal,
+    $weight: 600,
+    $height: var(--line-height-34)
+  );
+  @extend %font-Poppins;
+  // Decoration
+  color: var(--color-dark);
+
+  // Animation
+
+  // Various
+}
+
+.title-h2 {
+  // Position
+
+  // block-model
+
+  // Typography
+  @include mixins.text(
+    $size: var(--title-h2_desktop),
+    $style: normal,
+    $weight: 500,
+    $height: var(--line-height-20)
+  );
+  @extend %font-Poppins;
+
+  // Decoration
+  color: var(--color-title);
+
+  // Animation
+
+  // Various
+}
+
+.title-h3 {
+  // Position
+
+  // block-model
+
+  // Typography
+  @include mixins.text(
+    $size: var(--title-h3_desktop),
+    $style: normal,
+    $weight: 700,
+    $height: var(--line-height-20)
+  );
+
+  // Decoration
+  color: var(--color-dark);
+
+  // Animation
+
+  // Various
+}
+
+.paragraph-title-xl {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Poppins;
+  @include mixins.text(
+    $size: var(--text-fsize-L),
+    $style: normal,
+    $weight: 500,
+    $height: var(--line-height-24)
+  );
+
+  // Decoration
+  color: var(--color-title);
+
+  // Animation
+
+  // Various
+}
+
+.paragraph-title-l {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Prata;
+  @include mixins.text(
+    $size: var(--text-fsize-M),
+    $style: normal,
+    $weight: 400,
+    $height: var(--line-height-16)
+  );
+
+  // Decoration
+  color: var(--color-subtitle);
+
+  // Animation
+
+  // Various
+}
+
+.paragraph-title-s {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Poppins;
+  @include mixins.text(
+    $size: var(--text-fsize-S),
+    $style: normal,
+    $weight: 500,
+    $height: var(--line-height-14)
+  );
+
+  // Decoration
+  color: var(--color-interactive);
+
+  // Animation
+
+  // Various
+}
+
+.paragraph-s {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Poppins;
+  @include mixins.text(
+    $size: var(--text-fsize-S),
+    $style: normal,
+    $weight: 400,
+    $height: var(--line-height-14)
+  );
+
+  // Decoration
+  color: var(--color-dark);
+
+  // Animation
+
+  // Various
+}
+
+.code,
+p,
+pre,
+nav,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  // Position
+
+  // block-model
+  @extend %reset-padding-margin;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+li {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  list-style: none;
+  // Animation
+
+  // Various
+}
+
+a {
+  // Position
+
+  // block-model
+  display: inline-block;
+  @extend %reset-padding-margin;
+
+  // Typography
+  color: var(--color-dark);
+  // Decoration
+  text-decoration: none;
+  @extend %cursor-pointer;
+
+  // Animation
+
+  // Various
+  & :visited {
+    color: var(--color-dark);
+  }
+}
+
+img {
+  // Position
+  @extend %reset-padding-margin;
+
+  // block-model
+  display: block;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.container {
+  // Position
+
+  // block-model
+  margin: 0 auto;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+  @include mixins.media-wide-desktop {
+    max-width: var(--width-desktop);
+  }
+
+  @include mixins.media-desktop {
+    padding: 0 var(--padding-content-desktop);
+  }
+
+  @include mixins.media-tablet {
+    padding: 0 var(--padding-content-tablet);
+  }
+
+  @include mixins.media-mobile {
+    padding: 0 var(--padding-content-mobile);
+  }
+}
+
+main {
+  // Position
+
+  // block-model
+  flex-grow: 1;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.main__container {
+  // Position
+
+  // block-model
+  max-width: var(--width-tablet);
+  width: 100%;
+  justify-content: space-between;
+  padding: var(--padding-content-desktop);
+  column-gap: var(--gap-beetween-sections);
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include mixins.media-mobile {
+    // Position
+
+    // block-model
+    flex-wrap: wrap;
+    row-gap: var(--gap-beetween-sections);
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}
+
+// ==============================================================================================================
+// =========================================== modificators!!! Priority over above ==============================
+// ==============================================================================================================
+
+.text_underline {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  text-decoration: underline;
+
+  // Animation
+
+  // Various
+}
+
+.text_highlight {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  color: var(--color-interactive);
+
+  // Animation
+
+  // Various
+}
+
+.hidden {
+  // Position
+
+  // block-model
+  display: none;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+._overflow-hidden {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include mixins.media-tablet-large {
+    // Position
+
+    // block-model
+
+    // Typography
+
+    // Decoration
+    overflow: hidden;
+
+    // Animation
+
+    // Various
+  }
+}
+
+._pointer-events_disable {
+  // Position
+
+  // block-model
+  @extend %pointer-events-disable;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}

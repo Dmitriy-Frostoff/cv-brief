@@ -1,0 +1,65 @@
+@use '../../../shared/ui/common styles/index' as ui_common;
+
+.work-experience {
+  // Position
+
+  // block-model
+  width: 100%;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.work-experience__container {
+  // Position
+
+  // block-model
+  row-gap: var(--gap-beetween-sections);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.work-experience__job-container {
+  // Position
+
+  // block-model
+  row-gap: var(--gap-beetween-paragraphs);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.work-experience__job-resposibilities {
+  // Position
+
+  // block-model
+  row-gap: var(--gap-beetween-paragraphs);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  & > li:before {
+    display: inline-block;
+    content: '—';
+    width: 1em;
+  }
+}

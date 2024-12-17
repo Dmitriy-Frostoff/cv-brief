@@ -1,0 +1,83 @@
+// colors
+$color-background-primary: rgb(255, 255, 255);
+$color-background-additional: rgba(228, 246, 251, 0.5);
+
+$color-interactive: rgb(28, 142, 181);
+
+$color-title: rgb(28, 142, 181);
+$color-subtitle: rgb(121, 121, 121);
+
+$color-dark: rgb(34, 34, 34);
+$color-light: rgb(255, 255, 255);
+
+// line heights
+$line-height-34: 34px;
+$line-height-24: 24px;
+$line-height-20: 20px;
+$line-height-16: 16px;
+$line-height-14: 14px;
+
+// user width
+$width-desktop: 1440px;
+$width-tablet-large: 1024px;
+$width-tablet: 768px;
+$width-tablet-small: 640px;
+$width-mobile: 540px;
+$width-mobile-small: 375px;
+
+// media padding
+$padding-content-desktop: 32px;
+$padding-content-tablet: 20px;
+$padding-content-mobile: 10px;
+
+// content width
+$content-width-desktop: calc($width-desktop - $padding-content-desktop * 2);
+$content-width-tablet: calc($width-tablet-large - $padding-content-tablet * 2);
+$content-width-mobile: calc($width-mobile - $padding-content-mobile * 2);
+
+// gaps values
+$gap-beetween-sections: 24px;
+$gap-beetween-paragraphs: calc($gap-beetween-sections / 2);
+
+:root {
+  // colors
+  --color-background-primary: #{$color-background-primary};
+  --color-background-additional: #{$color-background-additional};
+
+  --color-interactive: #{$color-interactive};
+
+  --color-title: #{$color-title};
+  --color-subtitle: #{$color-subtitle};
+
+  --color-dark: #{$color-dark};
+  --color-light: #{$color-light};
+
+  // line heights
+  --line-height-34: #{$line-height-34};
+  --line-height-24: #{$line-height-24};
+  --line-height-20: #{$line-height-20};
+  --line-height-16: #{$line-height-16};
+  --line-height-14: #{$line-height-14};
+
+  // user width
+  --width-desktop: #{$width-desktop};
+  --width-tablet-large: #{$width-tablet-large};
+  --width-tablet: #{$width-tablet};
+  --width-tablet-small: #{$width-tablet-small};
+  --width-mobile: #{$width-mobile};
+  --width-mobile-small: #{$width-mobile-small};
+
+  // media queries padding
+  --padding-content-desktop: #{$padding-content-desktop};
+  --padding-content-tablet: #{$padding-content-tablet};
+  --padding-content-mobile: #{$padding-content-mobile};
+
+  // content width
+  --content-width-desktop: #{$content-width-desktop};
+  --content-width-tablet: #{$content-width-tablet};
+  --content-width-mobile: #{$content-width-mobile};
+
+  // gaps values
+  --gap-beetween-sections: #{$gap-beetween-sections};
+  --gap-beetween-paragraphs: #{$gap-beetween-paragraphs};
+}

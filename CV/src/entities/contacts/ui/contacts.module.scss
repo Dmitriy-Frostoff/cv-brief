@@ -1,0 +1,87 @@
+@use '../../../shared/ui/common styles/index' as ui_common;
+
+.contacts {
+  // Position
+
+  // block-model
+  row-gap: var(--gap-beetween-paragraphs);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.contacts__wrapper {
+  // Position
+
+  // block-model
+  column-gap: var(--gap-beetween-paragraphs);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include ui_common.media-mobile-small {
+    // Position
+
+    // block-model
+    flex-wrap: wrap;
+
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}
+
+.contacts__container {
+  // Position
+
+  // block-model
+  width: 100%;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.contacts__link {
+  // Position
+
+  // block-model
+
+  // Typography
+  font-weight: 600;
+  // Decoration
+
+  // Animation
+
+  // Various
+  &:hover,
+  &:active {
+    // Position
+
+    // block-model
+
+    // Typography
+
+    // Decoration
+    color: var(--color-interactive);
+    // Animation
+
+    // Various
+  }
+}
