@@ -111,6 +111,7 @@
     "../../CV/src/**/*.ts",
     "../../src/**/*.ts",
     "../../tests/**/*.ts",
+    "../jest/jest-setup.ts/**/*.ts",
     "../../*.ts",
     "../gulp/gulpfile.ts",
     "../webpack/webpack.config.ts"

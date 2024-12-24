@@ -62,11 +62,14 @@ module.exports = {
         mocha: true,
         jest: true,
       },
-      files: ['**/*.test.ts'],
+      files: ['**/*.test.ts', 'jest-setup.ts'],
       extends: [
         'plugin:@typescript-eslint/recommended',
+        'plugin:jest/recommended',
         'airbnb-base',
         'airbnb-typescript/base',
+        'plugin:jest-dom/recommended',
+        'plugin:testing-library/dom',
         'prettier',
       ],
       plugins: ['@typescript-eslint'],
@@ -77,7 +80,9 @@ module.exports = {
       },
     },
   ],
-  rules: {},
+  rules: {
+    'import/no-extraneous-dependencies': 'off', // check https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md about that
+  },
   noInlineConfig: true,
   reportUnusedDisableDirectives: true,
 };
