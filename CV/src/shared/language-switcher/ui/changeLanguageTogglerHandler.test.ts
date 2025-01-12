@@ -24,7 +24,7 @@ function setupEnvironment(): [
     path,
     readFileSync,
     '../../../pages/index.html',
-  );
+  ); // TODO!!! refactor to turn this function into pure one in its own module! Export it everywhere
 
   if (!htmlData) {
     throw new Error(`Empty htmlData`);
