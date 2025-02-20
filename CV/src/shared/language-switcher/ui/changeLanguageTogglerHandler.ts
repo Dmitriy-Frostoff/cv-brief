@@ -1,6 +1,6 @@
 /**
  * Handler for 'pointerdown' event on the EN - RU language switchers
- *  (input#EN-toggler and input#EN-toggler).
+ *  (input#EN-toggler and input#RU-toggler).
  * Handle the labels over inputs! Inputs are assumes to have 'appearence: none' property.
  *
  * @param {PointerEvent} event - pointer event (assume to be 'pointerdown' one)
