@@ -3,6 +3,8 @@ import type { GetHTMLasStringType } from '../getHTMLasString/types';
 /**
  * Setups the envirinment before every test.
  * Renders 'index.html' and returns tuple with window and documnet for usage in the test.
+ * Note: { resources: 'usable' } enables the css styles load.
+ *  Check the [jsdom Basic options](https://github.com/jsdom/jsdom#basic-options) for more.
  *
  * @param {import('jsdom')} jsdomModule - JSDOM module from JSDOM library
  * @param {GetHTMLasStringType} getHTMLasString - callback for getting
@@ -36,7 +38,7 @@ export default function setupUnitTestsEnvironment(
     throw new Error(`Empty htmlData`);
   }
 
-  const { window } = new JSDOM(htmlData);
+  const { window } = new JSDOM(htmlData, { resources: 'usable' });
   const { document } = window;
 
   return [window, document];
