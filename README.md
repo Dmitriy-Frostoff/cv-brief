@@ -10,8 +10,8 @@ Dmitriy Frostoff's minimalistic CV 👨‍🎓📝:
 
 #### PDF versions:
 
-- [CV-EN Dmitriy Morozov.pdf](https://Dmitriy-Frostoff.github.io/cv-brief/pdf/Dmitriy%20Frostoff's%20CV%20EN.pdf)
-- [CV-RU Dmitriy Morozov.pdf](https://Dmitriy-Frostoff.github.io/cv-brief/pdf/Dmitriy%20Frostoff's%20CV%20RU.pdf)
+- [CV-EN Dmitriy Morozov.pdf](https://Dmitriy-Frostoff.github.io/cv-brief/pdf/2025-07-06%20Dmitriy%20Frostoff's%20CV%20EN.pdf)
+- [CV-RU Dmitriy Morozov.pdf](https://Dmitriy-Frostoff.github.io/cv-brief/pdf/2025-07-06%20Dmitriy%20Frostoff's%20CV%20RU.pdf)
 
 #### stack:
 
