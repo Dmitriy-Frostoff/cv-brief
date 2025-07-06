@@ -2,18 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./CV/src/app/styles/index.scss":
-/*!**************************************!*\
-  !*** ./CV/src/app/styles/index.scss ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./CV/src/app/index.ts":
 /*!*****************************!*\
   !*** ./CV/src/app/index.ts ***!
@@ -23,6 +11,18 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.scss */ "./CV/src/app/styles/index.scss");
 
+
+
+/***/ }),
+
+/***/ "./CV/src/app/styles/index.scss":
+/*!**************************************!*\
+  !*** ./CV/src/app/styles/index.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
 
 
 /***/ }),
@@ -256,4 +256,4 @@ window.addEventListener('load', () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=main.aabf.js.map
+//# sourceMappingURL=main.de4c.js.map
